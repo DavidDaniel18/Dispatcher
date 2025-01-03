@@ -1,2 +1,2 @@
 # Dispatcher
- Dipatche messages to handlers
+ Dispatch messages to handlers
