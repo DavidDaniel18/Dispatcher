@@ -1,4 +1,4 @@
-﻿namespace Dispatcher.Abstractions;
+﻿namespace InTransit.Abstractions;
 
 /// <summary>
 /// Used to mark a class as a message to be passed to a Handler.

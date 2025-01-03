@@ -1,4 +1,4 @@
-﻿namespace Dispatcher.Abstractions;
+﻿namespace InTransit.Abstractions;
 
 /// <summary>
 /// Interface for a Message Dispatcher.

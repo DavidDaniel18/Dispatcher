@@ -1,6 +1,6 @@
-﻿using Dispatcher.Abstractions;
+﻿using InTransit.Abstractions;
 
-namespace Dispatcher.Handlers;
+namespace InTransit.Handlers;
 
 /// <summary>
 /// Handles a Message without returns.

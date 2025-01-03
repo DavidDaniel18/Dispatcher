@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Dispatcher.Registration;
+namespace InTransit.Registration;
 
 internal sealed class HandlerTypeRegister
 {

@@ -1,11 +1,19 @@
-﻿using Dispatcher.Abstractions;
-using Dispatcher.Handlers;
+﻿using InTransit.Abstractions;
+using InTransit.Handlers;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Dispatcher.Registration;
+namespace InTransit.Registration;
 
-static class ServiceRegistration
+/// <summary>
+/// Registers the Dispatcher and Handlers in the ServiceCollection
+/// </summary>
+public static class ServiceRegistration
 {
+    /// <summary>
+    /// Adds the Dispatcher and scans for Handlers in the calling assemblies
+    /// </summary>
+    /// <param name="collection"></param>
+    /// <returns></returns>
     public static IServiceCollection AddDispatcherAndScanForHandlers(this IServiceCollection collection)
     {
         collection.AddScoped<IMessageDispatcher, MessageDispatcher>();

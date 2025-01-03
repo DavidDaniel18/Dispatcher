@@ -1,8 +1,8 @@
-﻿using Dispatcher.Abstractions;
-using Dispatcher.Handlers;
+﻿using InTransit.Abstractions;
+using InTransit.Handlers;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Dispatcher;
+namespace InTransit;
 
 internal sealed class MessageDispatcher(IServiceProvider serviceProvider) : IMessageDispatcher
 {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dispatcher", "Dispatcher.csproj", "{6F02F211-B996-4B21-9A0A-B17F5B70B8E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InTransit", "InTransit.csproj", "{CC3BA4C2-6790-40E9-83A1-D2B0A7C542FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6F02F211-B996-4B21-9A0A-B17F5B70B8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F02F211-B996-4B21-9A0A-B17F5B70B8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F02F211-B996-4B21-9A0A-B17F5B70B8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F02F211-B996-4B21-9A0A-B17F5B70B8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3BA4C2-6790-40E9-83A1-D2B0A7C542FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3BA4C2-6790-40E9-83A1-D2B0A7C542FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3BA4C2-6790-40E9-83A1-D2B0A7C542FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3BA4C2-6790-40E9-83A1-D2B0A7C542FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
