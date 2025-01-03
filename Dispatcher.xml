@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dispatcher</name>
+    </assembly>
+    <members>
+        <member name="T:Dispatcher.Abstractions.IMessage">
+            <summary>
+            Used to mark a class as a message to be passed to a Handler.
+            </summary>
+        </member>
+        <member name="T:Dispatcher.Abstractions.IMessageDispatcher">
+            <summary>
+            Interface for a Message Dispatcher.
+            </summary>
+        </member>
+        <member name="M:Dispatcher.Abstractions.IMessageDispatcher.Dispatch``1(``0,System.Threading.CancellationToken)">
+            <summary>
+            Dispatches a Message.
+            </summary>
+            <param name="message"></param>
+            <param name="cancellation"></param>
+            <typeparam name="TMessage"></typeparam>
+        </member>
+        <member name="M:Dispatcher.Abstractions.IMessageDispatcher.DispatchAsync``1(``0,System.Threading.CancellationToken)">
+            <summary>
+            Dispatches a Message asynchronously.
+            </summary>
+            <param name="message"></param>
+            <param name="cancellation"></param>
+            <typeparam name="TMessage"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Dispatcher.Abstractions.IMessageDispatcher.Dispatch``2(``0,System.Threading.CancellationToken)">
+            <summary>
+            Dispatches a Message and returns a value.
+            </summary>
+            <param name="message"></param>
+            <param name="cancellation"></param>
+            <typeparam name="TMessage"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Dispatcher.Abstractions.IMessageDispatcher.DispatchAsync``2(``0,System.Threading.CancellationToken)">
+            <summary>
+            Dispatches a Message and returns a value asynchronously.
+            </summary>
+            <param name="message"></param>
+            <param name="cancellation"></param>
+            <typeparam name="TMessage"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Dispatcher.Handlers.IAction`1">
+            <summary>
+            Handles a Message without returns.
+            </summary>
+            <typeparam name="TMessage"></typeparam>
+        </member>
+        <member name="M:Dispatcher.Handlers.IAction`1.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Handles a Message
+            </summary>
+            <param name="message"></param>
+            <param name="cancellation"></param>
+        </member>
+        <member name="T:Dispatcher.Handlers.IActionAsync`1">
+            <summary>
+            Handles a Message asynchronously without returning a value.
+            </summary>
+            <typeparam name="TMessage"></typeparam>
+        </member>
+        <member name="M:Dispatcher.Handlers.IActionAsync`1.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Handles a Message asynchronously
+            </summary>
+            <param name="message"></param>
+            <param name="cancellation"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dispatcher.Handlers.IFunction`2">
+            <summary>
+            Handles a Message and returns a value.
+            </summary>
+            <typeparam name="TMessage"></typeparam>
+            <typeparam name="TResult"></typeparam>
+        </member>
+        <member name="M:Dispatcher.Handlers.IFunction`2.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Handles a Message and returns a value.
+            </summary>
+            <param name="message"></param>
+            <param name="cancellation"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dispatcher.Handlers.IFunctionAsync`2">
+            <summary>
+            Handles a Message and returns a value asynchronously.
+            </summary>
+            <typeparam name="TMessage"></typeparam>
+            <typeparam name="TResult"></typeparam>
+        </member>
+        <member name="M:Dispatcher.Handlers.IFunctionAsync`2.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Handles a Message and returns a value asynchronously.
+            </summary>
+            <param name="message"></param>
+            <param name="cancellation"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
